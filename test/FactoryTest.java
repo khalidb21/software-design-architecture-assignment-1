@@ -1,5 +1,3 @@
-import java.util.concurrent.locks.ReentrantLock;
-
 public class FactoryTest {
     public static void main(String[] args) {
 
@@ -19,6 +17,6 @@ public class FactoryTest {
 
         Lock LB = FactoryB.createLock();
 
-        System.out.println("Lock battery consumption " +LB.getBatteryConsumption());
+        System.out.println("Lock battery consumption (mah): " +LB.getBatteryConsumption());
     }
 }
