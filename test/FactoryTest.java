@@ -1,7 +1,24 @@
+import java.util.concurrent.locks.ReentrantLock;
+
 public class FactoryTest {
     public static void main(String[] args) {
-        // Implement the design in Java and include a test driver to demonstrate the code using two
-        // examples: A Bulb from Brand A and a Lock from Brand B
-        
+
+        //EXAMPLE 1: FACTORY A BULB
+        SmartDeviceFactory FactoryA = new FactoryA();
+
+        Bulb BA = FactoryA.createBulb();
+
+        System.out.println("Bulb power usage (watts): " + BA.getPowerUsage());
+
+
+        System.out.println("\n");
+
+
+        //EXAMPLE 2: FACTORY B LOCK
+        SmartDeviceFactory FactoryB = new FactoryB();
+
+        Lock LB = FactoryB.createLock();
+
+        System.out.println("Lock battery consumption " +LB.getBatteryConsumption());
     }
 }
