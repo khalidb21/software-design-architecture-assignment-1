@@ -1,14 +1,14 @@
 public class FactoryB implements SmartDeviceFactory {
     
     // Simulate factory method pattern by providing usage values for devices
-    private final float BULBA_WATTAGE = 10.0f;
-    private final int LOCKA_BATTERY = 450;
+    private final float BULB_B_WATTAGE = 10.0f;
+    private final int LOCK_B_BATTERY = 450;
 
     // Brand B bulb creation
     @Override
     public Bulb createBulb() {
         Bulb bulb = new BulbB();
-        bulb.setPowerUsage(BULBA_WATTAGE);
+        bulb.setPowerUsage(BULB_B_WATTAGE);
         return bulb;
     }
 
@@ -16,7 +16,7 @@ public class FactoryB implements SmartDeviceFactory {
     @Override
     public Lock createLock() {
         Lock lock = new LockB();
-        lock.setBatteryConsumption(LOCKA_BATTERY);
+        lock.setBatteryConsumption(LOCK_B_BATTERY);
         return lock;
     }
 }
