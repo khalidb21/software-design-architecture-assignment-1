@@ -1,3 +1,3 @@
-public class Lock {
-    
-}
+public interface Lock {
+    public void setBatteryConsumption();
+} 

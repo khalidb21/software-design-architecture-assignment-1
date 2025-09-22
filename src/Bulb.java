@@ -1,3 +1,3 @@
-public class Bulb {
-    
+public interface Bulb {
+    public void setPowerUsage();
 }
