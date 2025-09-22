@@ -7,7 +7,7 @@ public abstract class Lock {
     public abstract void setBatteryConsumption(int battery);
 
     // getter method to return battery consumption 
-    public float getBatteryConsumption() {
+    public int getBatteryConsumption() {
         return lockBatteryConsumption;
     }
 } 
