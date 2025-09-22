@@ -1,2 +1,6 @@
-# software-design-architecture-assignment-1
+# Software Design & Architecture - Assignment 1
+
+## Description
+
+Group Members: 
 Assignment 1 submission
